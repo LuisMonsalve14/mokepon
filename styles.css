@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2? family= Fredoka+One & family= Poppins:wght@300 & display=swap');
+
+body{
+    background-color: #041562;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.titulo{
+    color: white;
+   font-size: 32px;
+}
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+
+.tarjetas, #botones{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.tarjeta-de-mokemon{
+    
+    width: 180px;
+    height: 100px;
+    background-color: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    
+}
+.tarjeta-de-mokemon img{
+    width: 80px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #DA1212;
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 30px 20px 10px 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+
+}
+.boton-de-ataque{
+    height: 50px;
+    width: 160px;
+    font-size: 30px;
+    background-color: #11468F;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;   
+}
+
+#mensajes{
+    width: 280px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#boton-reiniciar{
+    border: transparent;
+    color: #041562;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#ataque{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.alinear-ataques-jugador, .alinear-ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+}
+
+@media (max-width: 500px ){
+    .tarjetas, #botones{
+        flex-direction: column;
+
+    }
+    .boton-de-ataque{
+        margin: 10x;
+    }
+
+    
+}
